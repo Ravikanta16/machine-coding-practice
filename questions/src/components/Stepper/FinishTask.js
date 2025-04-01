@@ -7,7 +7,7 @@ const Data = [
   },
   {
     name: "Shipping Info",
-    component: "Enter your Shipping address.",
+    component:<span style={{color:"red"}}> Enter your Shipping address</span>,
   },
   {
     name: "Payment",
@@ -39,7 +39,7 @@ const FinishTask = () => {
   };
 
   const getBackgroundColor = (index) => {
-    if (current > index + 1) return "green";
+    if (current > index + 1 || isComplete) return "green";
     else if (current === index + 1) return "blue";
     return "lightgray";
   };
@@ -88,7 +88,7 @@ const FinishTask = () => {
           );
         })}
       </div>
-      <div style={{}}>
+      <div>
         <ActiveComponent />
         <button onClick={handleNext} style={{ borderRadius: "5px" }}>
           {current === Data.length ? "Finish" : "Next"}

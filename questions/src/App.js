@@ -1,12 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-// import { Toggle } from './components/ToggleData/Toggle';
-import  ArrayHandle  from './components/ArrayHandling/ArrayHandle';
-import  Toggle2  from './components/ToggleData/Toggle2';
-import Toggle3 from './components/ToggleData3/Toggle3';
-// import Twodmatrix from './components/Twodmatrix';
-import GridOfXYLength from './components/TwoDRenderning/GridOfXYLength';
-import FinishTask from './components/Stepper/FinishTask';
+// // import { Toggle } from './components/ToggleData/Toggle';
+// import  ArrayHandle  from './components/ArrayHandling/ArrayHandle';
+// import  Toggle2  from './components/ToggleData/Toggle2';
+// import Toggle3 from './components/ToggleData3/Toggle3';
+// // import Twodmatrix from './components/Twodmatrix';
+// import GridOfXYLength from './components/TwoDRenderning/GridOfXYLength';
+// import FinishTask from './components/Stepper/FinishTask';
+import ThemeMode from './components/DarkLightMode/ThemeMode';
+
+
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         {/* <Toggle2/> */}
         {/* <Toggle3/> */}
         {/* <GridOfXYLength/> */}
-        <FinishTask/>
+        {/* <FinishTask/> */}
+        <ThemeMode/>
+        
 
     </div>
   );
